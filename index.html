@@ -1,0 +1,44 @@
+<html lang="eng">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Scheme Generator</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+ 
+    <body class="dark-mode">
+        <header id="app-header">
+            <div id="controls-container">
+                <input  
+                    type="color" 
+                    id="seed-color" 
+                    value="#F55A5A" 
+                    aria-label="Seed Color Picker"
+                >
+                
+                <select id="color-mode" aria-label="Color Scheme Mode">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+                    
+                    <button id="get-scheme-btn">Get color scheme</button>
+                    <!-- <button id="mode-toggle-btn" class="secondary-btn">Toggle Light Mode</button> -->
+                
+            </div>
+        </header>
+        
+        <main id="color-scheme-display">
+        </main>
+        
+        <!-- <div id="copy-message" class="hidden">Copied to clipboard!</div> -->
+        <script src="index.js"></script>
+    </body>
+    
+</html>
